@@ -1,16 +1,31 @@
-.cabecera {
-  background: #00acac;
+:root {
+  --color: #00acac;
+  --ancho-minimo: 37.5em;
+}
+
+@media (max-width: 37.5em) {
+  :root{
+    --color: rgb(243, 190, 93);
+    --fuente1: 20px;
+    --fuente2: 40px;
+  }
+}
+
+
+cabecera {
+  background: var(--color);
+  font-size: var(--fuente2);
 }
 
 .articulo__entradilla {
-  color: #00acac;
+  color: var(--color);
 }
 
 .articulo__cuerpo > p:first-child::first-letter {
-  color: #00acac;
+  color: var(--color);
 }
 
 .imagen-circulo,
 .imagen-hexagono {
-  background: #00acac;
+  background: var(--color);
 }

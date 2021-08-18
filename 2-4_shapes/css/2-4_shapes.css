@@ -4,16 +4,18 @@
 */
 
 .imagen-circulo {
-  /* border-radius: 50%; */
+  border-radius: 50%; 
+  shape-outside: border-box;
+  shape-margin: .5em;
   max-width: 25em;
   float: right;
   margin-right: -10em;
-  background: #004e92;
+  background: #249b34;
 }
 
 .imagen-circulo img {
   display: block;
-  /* border-radius: 50%; */
+  border-radius: 50%;
   mix-blend-mode: hard-light;
 }
 
@@ -23,6 +25,9 @@
   background: #004e92;
   margin-left: -10em;
   margin-right: 1em;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  shape-outside: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%) border-box;
+  shape-margin: .5em;
 }
 
 .imagen-hexagono img {
@@ -33,9 +38,11 @@
 @media (max-width: 37.5em) {
   .imagen-circulo {
     margin: 1em;
+    shape-outside: unset;
   }
 
   .imagen-hexagono {
     margin: 1em;
+    shape-outside: unset; /*Para que el texto deje de agruparse fuera del div */
   }
 }

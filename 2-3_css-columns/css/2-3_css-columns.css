@@ -15,6 +15,9 @@
 }
 
 .articulo__entradilla > p {
+  column-count: 2;
+  column-gap: 3em;
+  column-rule: thick solid rgba(0.8,.8,.8,.08);
   margin-bottom: 0;
 }
 

@@ -50,10 +50,10 @@ p {
 }
 
 .cabecera {
-  background: linear-gradient(38deg, #000428, #004e92);
+  background: linear-gradient(38deg, #4eff56, #e018b5);
   color: #fafafa;
   display: flex;
-  position: relative;
+  /* position: relative; */
 }
 
 .cabecera__bloque1 {
@@ -139,7 +139,8 @@ p {
   max-width: 34em;
   margin: auto;
 }
-.articulo__cuerpo > p:first-child::first-letter {
+
+.articulo__cuerpo  p:first-child::first-letter {
   color: #004e92;
   font-size: 12rem;
   line-height: 0.75;
