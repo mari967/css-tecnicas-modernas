@@ -1,5 +1,14 @@
 .contenedor {
   padding: 4em 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; 
+  /*
+  flex-wrap: wrap-reverse; --> saltos de línea del contenido 
+  en sentido inverso
+  */
+  justify-content: center;
+  /*align-items: flex-start ; /*por defecto es strech. Los elementos se estiran con el contenedor*/
 }
 
 .explorador {
@@ -13,6 +22,13 @@
   font-style: italic;
   font-size: 1.2em;
   line-height: 1.4;
+}
+
+.exp6 {
+  /* flex-shrink: 1; */
+  flex-grow: 1;
+  flex-basis: 300px; /*es como un width*/
+  order: 1;  /* positivo al final. El cambio de orden es visual. Los lectores de texto no los detectan*/
 }
 
 body {
